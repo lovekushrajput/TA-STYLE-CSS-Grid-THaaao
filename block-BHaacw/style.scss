@@ -1,0 +1,17 @@
+@import"vars";
+@import"reset";
+@import"general";
+@import"home";
+
+ 
+ 
+
+@media screen and (max-width: 360px) {
+     html{
+         font-size: 9px;
+     }
+    .sm-column{
+        display: flex;
+        flex-direction: column;
+    }
+ }
