@@ -1,0 +1,127 @@
+body{
+background-color: $bg-body;
+font-family: $font-family;
+}
+
+.nav{
+    margin-top: 1rem;
+    padding: 1rem 0.9rem;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: $primary;
+    font-weight: 600;
+}
+
+
+.grid{
+    margin-top: 2rem;
+   display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:  50px 130px 130px 130px;
+    width: 100%;
+    grid-template-areas: 
+    "header header header"
+    "upper-sidebar-r main upper-sidebar-l"
+    "middle-sidebar-r .  middle-sidebar-l"
+    ".                 .      lower-sidebar-l"
+    ;
+}
+
+
+.item{
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.box-1{
+    border-top: 3px solid $primary;
+    grid-column: 1/-1;
+}
+
+
+.box-5{
+    border-top: 3px solid $primary;
+    grid-row: span 2;
+}
+.box-2{
+    border-top: 3px solid $primary;
+}
+.box-3{
+    border-top: 2px solid $primary;
+    grid-row: span 3;
+}
+
+
+img{
+    width: 100%;
+}
+
+.graph{
+    width: 50%;
+    padding-left: 5rem;
+}
+
+h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $text-dark;
+}
+
+p{
+    padding: 0.5rem 0;
+    color: $text-dark;
+}
+
+strong{
+    color: $text-red;
+}
+
+.box-4{
+    padding-top: 1rem;
+    border-top: 3px solid $primary;
+      background-color: white;
+      h2{
+          padding-left: 1rem;
+      }
+
+      p{
+          padding-left: 1rem;
+      }
+    strong{
+        margin-top: 1.2rem;
+         display: block;
+        color: white;
+        background-color: red;
+        padding-top: 0.3rem;
+        padding-left: 1rem;
+        padding-bottom: 0.3rem;
+    }
+   
+}
+
+.box-6{
+    background-color: white;
+    margin-top: 0.5rem;
+    h2{
+        padding: 0.3rem 1rem;
+        background-color: $primary;
+        color: white;
+    }
+
+    p{
+        padding-left: 1rem;
+    }
+    strong{
+        padding-left: 1rem;
+    }
+}
+
+ .box-7{
+     margin-top: 0.5rem;
+     border-top: 3px solid $primary;
+ }
