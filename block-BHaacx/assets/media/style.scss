@@ -1,0 +1,73 @@
+@import"vars";
+@import"general";
+@import"reset";
+@import"home";
+
+@media screen and (max-width:768px) {
+    html{
+        font-size: 10px;
+    }
+
+ .sm-column{
+        display: flex;
+        flex-direction: column;
+    }
+    .item-1, .item-15{
+        background-position-x: 0vw;
+    }
+    .item-4, .item-10,.item-13, .item-15{
+        height: 100vh;
+    }
+
+    // navbar
+    .nav{
+        display: none;
+    }
+    #toggle:checked~.nav{
+        display: inline-block;
+    }
+        .nav{
+            background-color: rgba($color: black, $alpha: 0.8);
+            height: 100vh;
+            position: fixed;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            padding: 4rem 0;
+            font-size: 1.3rem;
+            li{
+                padding: 1.2rem 0;
+            }       
+        }
+    .item-1{
+        header{
+            width: 100%;
+            background-color: white;
+            position: fixed;
+            padding: 1rem 0;
+    z-index: 99;
+            .brand{
+                padding-left: 1rem;
+                color: black; 
+            }
+        }
+    }
+
+    .item-2{
+        header{
+            .bar{   
+                position: fixed;
+                top: 1.4rem;
+                right: 2rem;
+                display: block;
+                font-size: 2rem;
+                color: $yellow-text;
+                z-index: 200;
+              }
+        }
+    }
+    
+     
+    }
+    
